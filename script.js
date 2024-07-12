@@ -60,11 +60,11 @@ function genPasswd(){
 function copypwd(passwd1or2){
     if (passwd1or2 === 1){
         navigator.clipboard.writeText(passwd1El.textContent)
-        passwd1El.textContent = "Password copied!" //🔑
+        passwd1El.textContent = "Password copied! 🔑" 
     }
     else{
         navigator.clipboard.writeText(passwd2El.textContent)
-        passwd2El.textContent = "Password copied!" //🔑
+        passwd2El.textContent = "Password copied! 🔑"
     }
 }
 
