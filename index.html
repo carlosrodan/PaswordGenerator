@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="textColor1">Generate a</h1>
+    <h1 class="textColor2">random password</h1>
+    <h3 class="textColor3">Never use a insecure password again.</h2>
+
+    <button id="gen-btn" onclick="genPasswd()">Generate passwords</button>
+
+    <p class="textColor1 row1">Password length: </p>
+
+    <div class="row1">
+        <select id="myDropdown">
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </select>
+    </div>
+    <br>
+    <p class="switchText">Enable Numbers:</p>
+    <!-- Numbers switch -->
+    <label class = "switch number">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <br>
+    <p class="switchText2">Enable Symbols:</p>
+    <!-- Symbols switch -->
+    <label class = "switch symbol">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <br>
+    <hr>
+    <button id="passwd1-el" class="passwd" onclick="copypwd(1)">Password 1</button>
+    <button id="passwd2-el" class="passwd" onclick="copypwd(2)">Password 2</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

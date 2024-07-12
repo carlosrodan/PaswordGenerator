@@ -1,0 +1,160 @@
+:root{
+    --backgroundColor:#1d2630;
+    --buttonColor:#10a070;
+    --paswordColor:#263648;
+
+    --textColor1:white;
+    --textColor2:#4AE084;
+    --textColor3:#D2D1DC;
+
+    --lineColor:#303944;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: var(--backgroundColor);
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 230px;
+}
+
+.textColor1 {
+    color: var(--textColor1);
+}
+.textColor2 {
+    color: var(--textColor2);
+}
+.textColor3 {
+    color: var(--textColor3);
+}
+
+h1 {
+    padding: 0%;
+    margin: 0%;
+}
+
+h3{
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+hr{
+    width: 100%;
+    border-color: var(--lineColor);
+}
+
+#gen-btn {
+    border-radius: 5px;
+    border-width: 0;
+    background: var(--buttonColor);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+#gen-btn:hover{
+    background: #15b881;
+}
+#gen-btn:active {
+    position: relative;
+    top: 1px;
+    left: 1px;
+}
+
+.passwd {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 20px;
+    background-color: var(--paswordColor);
+    color: var(--textColor2);
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    border-width: 0;
+    font-size: 15px;
+}
+
+#passwd1-el {
+    margin-right: 30px;
+}
+
+#myDropdown{
+    background: var(--paswordColor);
+    color: var(--textColor1);
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: var(--buttonColor);
+    font-size: 15px;
+}
+
+.row1{
+    display: inline-block;
+}
+
+/*========== Switch ============*/
+.switchText{
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--textColor1);
+    font-size: 15px;
+}.switchText2{
+    display: inline-block;
+    margin-right: 14px;
+    color: var(--textColor1);
+    font-size: 15px;
+}
+/* The switch - the box around the slider */
+.switch{
+    position: relative;
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+}
+/* Hide default HTML checkbox */
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* The slider */
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background: #928f8f;
+    transition: 0.4s;
+    height: 26px;
+    width: 44px;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    left: 5px;
+    bottom: 4px;
+    height: 18px;
+    width: 18px;
+    background: white;
+    transition: 0.4s;
+}
+input:checked + .slider {
+    background-color: var(--buttonColor);
+}
+input:checked + .slider::before{
+    transform: translateX(16px);
+}
+.slider.round {
+    border-radius: 20px;
+}
+.slider.round::before{
+    border-radius: 20px;
+}
+/*========== End Switch ============*/
